@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "TinyWins",
   description:
     "TinyWins helps people discover the small lifestyle changes that create meaningful sustainability impact.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/tinywins-icon.svg",
+  },
 };
 
 export default function RootLayout({

@@ -1,9 +1,9 @@
 import { Recommendation } from "@/types/assessment";
 
 const impactTone = {
-  High: "border-rose-400/30 bg-rose-500/16 text-rose-100",
-  Medium: "border-amber-300/30 bg-amber-400/16 text-amber-50",
-  Low: "border-emerald-300/30 bg-emerald-400/16 text-emerald-50",
+  High: "border-rose-400/30 bg-rose-500/15 text-rose-100",
+  Medium: "border-amber-300/30 bg-amber-400/15 text-amber-50",
+  Low: "border-emerald-300/30 bg-emerald-400/15 text-emerald-50",
 };
 
 export function RecommendationCard({
@@ -35,8 +35,8 @@ export function RecommendationCard({
       <p className="mt-2 text-sm text-white/50">{recommendation.category}</p>
 
       <div className="mt-5 rounded-[1.2rem] border border-white/8 bg-black/20 p-4">
-        <p className="text-xs uppercase tracking-[0.22em] text-white/42">Why this matters</p>
-        <p className="mt-2 text-sm leading-7 text-white/68">{recommendation.why}</p>
+        <p className="text-xs uppercase tracking-[0.22em] text-white/40">Why this matters</p>
+        <p className="mt-2 text-sm leading-7 text-white/70">{recommendation.why}</p>
       </div>
     </article>
   );

@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="30" fill="#09111F"/>
+  <circle cx="31" cy="84" r="9" fill="url(#dot)"/>
+  <path d="M89.1264 21.366C105.398 30.7611 116.349 48.3561 116.349 68.5087C116.349 98.4557 92.0726 122.733 62.1257 122.733C41.9731 122.733 24.3781 111.782 14.983 95.51L28.1467 87.9094C35.0342 99.4174 47.6412 107.126 62.1257 107.126C83.4527 107.126 100.743 89.8357 100.743 68.5087C100.743 54.0242 93.0342 41.4172 81.5262 34.5297L89.1264 21.366Z" fill="url(#ringA)"/>
+  <path d="M21.9611 93.6316C13.7962 86.8917 8.58008 76.6962 8.58008 65.2816C8.58008 44.9778 25.0406 28.5173 45.3444 28.5173C56.759 28.5173 66.9545 33.7334 73.6948 41.8983L62.3375 51.2742C58.4928 46.7443 52.7554 43.8521 46.3448 43.8521C34.7584 43.8521 25.3666 53.2439 25.3666 64.8303C25.3666 71.2409 28.2588 76.9783 32.7887 80.823L21.9611 93.6316Z" fill="url(#ringB)"/>
+  <path d="M58.4962 84.9458C60.7275 61.4727 80.3457 38.5224 104.263 37.7046C104.417 64.4325 84.4383 88.1046 58.4962 84.9458Z" fill="url(#leaf)"/>
+  <path d="M46.5283 99.5815C53.9422 79.6715 67.9248 60.247 87.3437 46.9004C73.1436 62.1293 61.9774 80.0315 55.2994 99.5815H46.5283Z" fill="#132236"/>
+  <defs>
+    <linearGradient id="ringA" x1="16" y1="27" x2="104" y2="115" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9E34B"/>
+      <stop offset="0.55" stop-color="#38C8A2"/>
+      <stop offset="1" stop-color="#2756FF"/>
+    </linearGradient>
+    <linearGradient id="ringB" x1="12" y1="38" x2="71" y2="93" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A3D2B"/>
+      <stop offset="0.55" stop-color="#1F8A5F"/>
+      <stop offset="1" stop-color="#1E2E8F"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="62" y1="82" x2="102" y2="39" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4FB55A"/>
+      <stop offset="1" stop-color="#9EDD5D"/>
+    </linearGradient>
+    <radialGradient id="dot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(31 84) rotate(90) scale(12)">
+      <stop stop-color="#CFF87D"/>
+      <stop offset="1" stop-color="#61DFC3"/>
+    </radialGradient>
+  </defs>
+</svg>

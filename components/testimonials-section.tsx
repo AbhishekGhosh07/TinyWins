@@ -37,12 +37,12 @@ export function TestimonialsSection() {
               key={testimonial.name}
               className="glass-panel rounded-[1.75rem] p-6"
             >
-              <p className="text-base leading-7 text-white/72">
+              <p className="text-base leading-7 text-white/70">
                 “{testimonial.quote}”
               </p>
               <div className="mt-8 border-t border-white/10 pt-5">
                 <p className="font-medium text-white">{testimonial.name}</p>
-                <p className="mt-1 text-sm text-white/48">{testimonial.title}</p>
+                <p className="mt-1 text-sm text-white/50">{testimonial.title}</p>
               </div>
             </article>
           ))}

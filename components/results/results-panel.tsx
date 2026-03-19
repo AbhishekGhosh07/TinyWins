@@ -11,7 +11,7 @@ export function ResultsPanel({ result }: { result: AssessmentResult }) {
             <p className="text-5xl font-semibold tracking-tight text-white">
               {result.overallScore}
             </p>
-            <p className="pb-2 text-sm text-white/52">Estimated impact score / 100</p>
+            <p className="pb-2 text-sm text-white/50">Estimated impact score / 100</p>
           </div>
           <p className="mt-4 text-sm leading-7 text-white/62">
             This score is a quick directional read, not a perfect footprint calculator.
@@ -22,7 +22,7 @@ export function ResultsPanel({ result }: { result: AssessmentResult }) {
         <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
           <p className="text-xs uppercase tracking-[0.24em] text-white/45">Personalized Insight</p>
           <h2 className="mt-4 text-2xl font-semibold text-white">What matters most for you</h2>
-          <p className="mt-4 text-base leading-8 text-white/68">{result.insight}</p>
+          <p className="mt-4 text-base leading-8 text-white/70">{result.insight}</p>
 
           {result.positiveCategories.length ? (
             <div className="mt-8 rounded-[1.5rem] border border-emerald-400/15 bg-emerald-400/8 p-4">
@@ -39,7 +39,7 @@ export function ResultsPanel({ result }: { result: AssessmentResult }) {
       <section className="glass-panel rounded-[2rem] p-6 sm:p-8">
         <p className="text-xs uppercase tracking-[0.24em] text-white/45">Your Top TinyWins</p>
         <h2 className="mt-3 text-2xl font-semibold text-white">Three practical next steps</h2>
-        <p className="mt-3 max-w-2xl text-sm leading-7 text-white/58">
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
           These picks are meant to feel realistic, not overwhelming. Start with the one that feels easiest to try this week.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">

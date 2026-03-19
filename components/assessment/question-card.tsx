@@ -30,7 +30,7 @@ export function QuestionCard({
       <h2 className="mt-6 max-w-3xl text-2xl font-semibold tracking-tight text-white sm:text-4xl">
         {question.prompt}
       </h2>
-      <p className="mt-3 max-w-2xl text-sm leading-6 text-white/58 sm:text-base">
+      <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60 sm:text-base">
         Pick the answer that feels closest to your real routine. Close enough is perfect.
       </p>
 
@@ -45,7 +45,7 @@ export function QuestionCard({
               onClick={() => onSelect(option.value)}
               className={`rounded-[1.4rem] border px-4 py-4 text-left transition duration-200 sm:px-5 ${
                 isSelected
-                  ? "border-glow-mint/60 bg-glow-mint/12 shadow-glow"
+                  ? "border-glow-mint/60 bg-glow-mint/10 shadow-glow"
                   : "border-white/10 bg-black/20 hover:border-white/20 hover:bg-white/[0.06]"
               }`}
             >

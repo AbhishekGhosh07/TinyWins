@@ -2,17 +2,17 @@ import { CategorySummary } from "@/types/assessment";
 
 const levelStyles = {
   High: {
-    badge: "border-rose-400/30 bg-rose-500/18 text-rose-100",
+    badge: "border-rose-400/30 bg-rose-500/20 text-rose-100",
     bar: "from-rose-500 via-rose-400 to-orange-300",
     label: "text-rose-200",
   },
   Medium: {
-    badge: "border-amber-300/30 bg-amber-400/18 text-amber-50",
+    badge: "border-amber-300/30 bg-amber-400/20 text-amber-50",
     bar: "from-amber-500 via-amber-300 to-yellow-100",
     label: "text-amber-100",
   },
   Low: {
-    badge: "border-emerald-300/30 bg-emerald-400/18 text-emerald-50",
+    badge: "border-emerald-300/30 bg-emerald-400/20 text-emerald-50",
     bar: "from-emerald-500 via-emerald-300 to-lime-100",
     label: "text-emerald-100",
   },
@@ -27,7 +27,7 @@ export function ImpactSnapshot({ categories }: { categories: CategorySummary[] }
             Your Impact Snapshot
           </p>
           <h2 className="mt-3 text-2xl font-semibold text-white">Where your impact shows up most</h2>
-          <p className="mt-2 text-sm leading-6 text-white/58">
+          <p className="mt-2 text-sm leading-6 text-white/60">
             Higher levels are the best places to focus first. Lower ones are already in a good spot.
           </p>
         </div>

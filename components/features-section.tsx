@@ -4,31 +4,40 @@ import { SectionHeading } from "@/components/section-heading";
 const features = [
   {
     number: "01",
-    title: "Personalized impact snapshot",
-    description: "See where your lifestyle has the biggest impact with a clean, focused view of what matters most.",
+    eyebrow: "Recommendations",
+    title: "Personalized recommendations",
+    description: "Get practical next steps tied to your own habits instead of generic sustainability tips.",
   },
   {
     number: "02",
-    title: "Top 3 TinyWins",
-    description: "Get focused actions instead of generic advice, so you know exactly where to start this week.",
+    eyebrow: "Scoring",
+    title: "Impact-based scoring",
+    description: "See which parts of your lifestyle matter most, ranked in a way that is easy to understand.",
   },
   {
     number: "03",
-    title: "Progress without guilt",
-    description: "Improve over time with clarity, confidence, and a healthier relationship to sustainable choices.",
+    eyebrow: "Experience",
+    title: "Fast and easy assessment",
+    description: "Finish the flow in about two minutes and walk away with something genuinely useful.",
+  },
+  {
+    number: "04",
+    eyebrow: "Behavior Change",
+    title: "Built for realistic progress",
+    description: "TinyWins is designed around practical behavior change, so the advice feels doable in real life.",
   },
 ];
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section id="features" className="section-pad px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Features"
-          title="A calmer way to build meaningful sustainable habits."
-          description="TinyWins turns complexity into a short list of elegant next steps, tailored to your real life."
+          title="Why TinyWins feels like a product, not just a quiz."
+          description="A cleaner interface, better prioritization, and behavior-aware guidance make the whole experience feel more useful from the first click."
         />
-        <div className="mt-10 grid gap-5 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {features.map((feature) => (
             <FeatureCard key={feature.number} {...feature} />
           ))}

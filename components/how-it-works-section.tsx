@@ -1,37 +1,41 @@
 import { SectionHeading } from "@/components/section-heading";
 
 const steps = [
-  "Answer a few quick questions",
-  "See where your impact mostly comes from",
-  "Get your top TinyWins",
+  {
+    title: "Answer",
+    description: "Complete a quick lifestyle assessment in about 2 minutes.",
+    icon: "01",
+  },
+  {
+    title: "Discover",
+    description: "See which areas of your lifestyle drive the most impact.",
+    icon: "02",
+  },
+  {
+    title: "Improve",
+    description: "Get 3 personalized actions that are practical and high-leverage.",
+    icon: "03",
+  },
 ];
 
 export function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto grid max-w-6xl gap-10 rounded-[2rem] border border-white/8 bg-white/[0.03] p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
+    <section id="how-it-works" className="section-pad px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="How It Works"
-          title="Three quick steps. Clearer decisions."
-          description="The experience is designed to feel effortless, insightful, and useful from the first minute."
+          title="How TinyWins works"
+          description="A fast, product-style flow that turns your everyday habits into a clear set of next moves."
         />
-        <div className="space-y-4">
-          {steps.map((step, index) => (
-            <div
-              key={step}
-              className="glass-panel flex items-start gap-5 rounded-[1.5rem] p-5"
-            >
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/12 bg-white/5 text-sm font-medium text-white">
-                0{index + 1}
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {steps.map((step) => (
+            <article key={step.title} className="tw-card p-6 sm:p-7">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-brand-teal/20 to-brand-blue/20 text-sm font-semibold text-white">
+                {step.icon}
               </div>
-              <div>
-                <p className="text-lg font-medium text-white">{step}</p>
-                <p className="mt-2 text-sm leading-6 text-white/58">
-                  TinyWins keeps the signal high and the friction low, so you can move
-                  from insight to action without the mental overload.
-                </p>
-              </div>
-            </div>
+              <h3 className="mt-8 text-2xl font-semibold text-white">{step.title}</h3>
+              <p className="mt-3 text-base leading-7 text-white/60">{step.description}</p>
+            </article>
           ))}
         </div>
       </div>
