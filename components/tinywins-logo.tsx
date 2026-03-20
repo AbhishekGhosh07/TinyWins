@@ -14,9 +14,9 @@ export function TinyWinsLogo({
   priority = false,
   href = "/",
 }: TinyWinsLogoProps) {
-  const src = variant === "icon" ? "/tinywins-icon.svg" : "/TinyWins-logo.png";
-  const width = variant === "icon" ? 40 : 612;
-  const height = variant === "icon" ? 40 : 408;
+  const src = variant === "icon" ? "/tinywins-icon.svg" : "/tinywins-logo-tight.png";
+  const width = variant === "icon" ? 40 : 317;
+  const height = variant === "icon" ? 40 : 115;
 
   const image = (
     <Image
@@ -28,9 +28,9 @@ export function TinyWinsLogo({
       className={
         variant === "icon"
           ? `h-10 w-10 object-contain ${className}`
-          : `h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.28)] sm:h-12 ${className}`
+          : `h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.24)] sm:h-12 ${className}`
       }
-      sizes={variant === "full" ? "(max-width: 640px) 164px, 184px" : undefined}
+      sizes={variant === "full" ? "(max-width: 640px) 152px, 176px" : undefined}
     />
   );
 
