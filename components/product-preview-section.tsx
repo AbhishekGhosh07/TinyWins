@@ -30,18 +30,18 @@ export function ProductPreviewSection() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.92fr_1.08fr]">
         <div>
           <SectionHeading
-            eyebrow="Product Preview"
-            title="A clean snapshot that shows what actually matters."
-            description="TinyWins feels like a real product, not a guilt-heavy quiz. You get a clear read on your impact and three specific next steps you can actually use."
+            eyebrow="Results Preview"
+            title="A fuller dashboard view of what happens after the assessment."
+            description="The results experience goes beyond a quick teaser. It organizes your impact areas, shows where to focus, and turns that into a short list of practical next steps."
           />
-          <div className="mt-8 space-y-4 text-sm text-white/62">
+          <div className="mt-7 space-y-3 text-sm text-white/60">
             <div className="tw-card flex items-start gap-4 p-4">
               <div className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-teal" />
-              <p>See your highest-impact lifestyle categories first.</p>
+              <p>Compare your highest-impact categories in one glance.</p>
             </div>
             <div className="tw-card flex items-start gap-4 p-4">
               <div className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-blue" />
-              <p>Get realistic next steps instead of broad sustainability advice.</p>
+              <p>See why each recommendation made the shortlist.</p>
             </div>
           </div>
           <Link href="/assessment" className="btn-secondary mt-8">
@@ -52,12 +52,12 @@ export function ProductPreviewSection() {
         <div className="relative">
           <div className="absolute left-8 top-8 h-40 w-40 rounded-full bg-brand-teal/10 blur-[90px]" />
           <div className="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-brand-blue/10 blur-[110px]" />
-          <div className="tw-card relative overflow-hidden rounded-[2rem] p-5 sm:p-6">
+          <div className="tw-card relative overflow-hidden rounded-[2rem] p-4 sm:p-5 lg:p-6">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
             <div className="grid gap-4 xl:grid-cols-[0.95fr_1.05fr]">
               <div className="rounded-[1.5rem] border border-white/8 bg-black/20 p-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-white/40">
-                  Impact Snapshot
+                  Ranked impact areas
                 </p>
                 <div className="mt-5 space-y-4">
                   {categories.map((category) => (
@@ -79,7 +79,7 @@ export function ProductPreviewSection() {
 
               <div className="rounded-[1.5rem] border border-white/8 bg-black/20 p-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-white/40">
-                  Your Top TinyWins
+                  Recommended next steps
                 </p>
                 <div className="mt-4 space-y-3">
                   {recommendations.map((item, index) => (

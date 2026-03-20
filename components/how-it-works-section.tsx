@@ -25,7 +25,7 @@ export function HowItWorksSection() {
         <SectionHeading
           eyebrow="How It Works"
           title="How TinyWins works"
-          description="A fast, product-style flow that turns your everyday habits into a clear set of next moves."
+          description="A quick, product-led flow that turns your everyday habits into a clear next-step plan."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {steps.map((step) => (

@@ -35,7 +35,7 @@ export function FeaturesSection() {
         <SectionHeading
           eyebrow="Features"
           title="Why TinyWins feels like a product, not just a quiz."
-          description="A cleaner interface, better prioritization, and behavior-aware guidance make the whole experience feel more useful from the first click."
+          description="Clear prioritization, behavior-aware guidance, and a fast product flow make the experience feel useful from the first click."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {features.map((feature) => (

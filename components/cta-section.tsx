@@ -11,10 +11,10 @@ export function CTASection() {
             Start Your TinyWins
           </span>
           <h2 className="mt-5 text-3xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">
-            See what changes are actually worth your effort.
+            See which changes deserve your attention first.
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/62 sm:text-lg">
-            TinyWins helps you cut through the noise and focus on the highest-leverage moves for your lifestyle.
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/60 sm:text-lg">
+            Cut through the noise, get a clear impact snapshot, and walk away with three practical next steps.
           </p>
           <Link href="/assessment" className="btn-primary mt-8">
             Start Assessment

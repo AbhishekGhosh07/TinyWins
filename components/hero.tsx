@@ -8,8 +8,8 @@ const trustPoints = [
 
 export function Hero() {
   return (
-    <section className="section-pad px-4 pt-2 sm:px-6 lg:px-8">
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 overflow-hidden rounded-[2.25rem] border border-white/10 bg-[#07111F] px-6 py-12 shadow-panel sm:px-8 sm:py-14 lg:grid-cols-[1.02fr_0.98fr] lg:px-12 lg:py-16">
+    <section className="px-4 pb-10 pt-2 sm:px-6 sm:pb-12 lg:px-8 lg:pb-14">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-10 overflow-hidden rounded-[2.25rem] border border-white/10 bg-[#07111F] px-6 py-10 shadow-panel sm:px-8 sm:py-12 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12 lg:px-12 lg:py-16">
         <div className="absolute inset-0 bg-hero-grid bg-[size:100%_100%,30px_30px,30px_30px] opacity-[0.16]" />
         <div className="absolute left-[-8%] top-[-10%] h-56 w-56 rounded-full bg-brand-teal/10 blur-[110px]" />
         <div className="absolute bottom-[-14%] right-[-8%] h-72 w-72 rounded-full bg-brand-blue/10 blur-[120px]" />
@@ -34,8 +34,22 @@ export function Hero() {
             <Link href="/assessment" className="btn-primary">
               Start Assessment
             </Link>
-            <a href="#how-it-works" className="btn-secondary">
+            <a href="#how-it-works" className="btn-secondary gap-2">
               See How It Works
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 20 20"
+                className="h-4 w-4 text-white/55"
+              >
+                <path
+                  d="M10 4v10m0 0 4-4m-4 4-4-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.8"
+                />
+              </svg>
             </a>
           </div>
 
@@ -50,18 +64,18 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <div className="tw-card relative overflow-hidden rounded-[2rem] p-5 sm:p-6">
+          <div className="tw-card relative overflow-hidden rounded-[2rem] p-4 sm:p-5 lg:p-6">
             <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-brand-teal/10 blur-[80px]" />
             <div className="absolute left-6 top-6 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-white/60">
-              Live product preview
+              Assessment preview
             </div>
 
-            <div className="mt-12 grid gap-4">
+            <div className="mt-12 grid gap-3 sm:gap-4">
               <div className="rounded-[1.6rem] border border-white/8 bg-black/20 p-4 sm:p-5">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-xs uppercase tracking-[0.24em] text-white/40">Impact Snapshot</p>
-                    <p className="mt-2 text-2xl font-semibold text-white">Your biggest opportunities</p>
+                    <p className="mt-2 text-2xl font-semibold text-white">Your first read, instantly</p>
                   </div>
                   <div className="rounded-full border border-brand-teal/20 bg-brand-teal/10 px-3 py-1 text-sm text-brand-teal">
                     2 min
@@ -74,7 +88,10 @@ export function Hero() {
                     { name: "Food", value: "Medium", tone: "bg-amber-300/10 text-amber-50" },
                     { name: "Home", value: "Medium", tone: "bg-amber-300/10 text-amber-50" },
                   ].map((metric) => (
-                    <div key={metric.name} className="rounded-[1.2rem] border border-white/8 bg-white/[0.03] p-4">
+                    <div
+                      key={metric.name}
+                      className="rounded-[1.2rem] border border-white/8 bg-white/[0.03] p-4"
+                    >
                       <p className="text-sm text-white/50">{metric.name}</p>
                       <span className={`mt-3 inline-flex rounded-full px-3 py-1 text-sm ${metric.tone}`}>
                         {metric.value}

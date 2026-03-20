@@ -32,8 +32,8 @@ export function Navbar() {
           isScrolled ? "glass-panel border-white/10 shadow-panel" : "border border-transparent"
         }`}
       >
-        <div className="flex min-h-[72px] items-center justify-between gap-5 px-4 py-3 sm:px-5">
-          <TinyWinsLogo priority className="translate-y-[1px]" />
+        <div className="flex min-h-[74px] items-center justify-between gap-5 px-4 py-3 sm:px-5">
+          <TinyWinsLogo priority className="translate-y-[1px] sm:mr-1" />
 
           <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex">
             {links.map((link) => (

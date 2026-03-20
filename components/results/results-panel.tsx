@@ -13,7 +13,7 @@ export function ResultsPanel({ result }: { result: AssessmentResult }) {
             </p>
             <p className="pb-2 text-sm text-white/50">Estimated impact score / 100</p>
           </div>
-          <p className="mt-4 text-sm leading-7 text-white/62">
+          <p className="mt-4 text-sm leading-7 text-white/60">
             This score is a quick directional read, not a perfect footprint calculator.
             Think of it as a smart nudge toward the areas most worth your attention.
           </p>

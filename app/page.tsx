@@ -5,6 +5,7 @@ import { FaqSection } from "@/components/faq-section";
 import { Hero } from "@/components/hero";
 import { HowItWorksSection } from "@/components/how-it-works-section";
 import { Navbar } from "@/components/navbar";
+import { ProductFactsStrip } from "@/components/product-facts-strip";
 import { ProductPreviewSection } from "@/components/product-preview-section";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           <div className="absolute right-[-8%] top-16 h-80 w-80 rounded-full bg-brand-blue/10 blur-[140px]" />
           <Navbar />
           <Hero />
+          <ProductFactsStrip />
           <FeaturesSection />
           <HowItWorksSection />
           <ProductPreviewSection />

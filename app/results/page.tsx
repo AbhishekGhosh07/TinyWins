@@ -89,7 +89,7 @@ export default function ResultsPage() {
           <h2 className="mt-4 text-3xl font-semibold text-white">
             Finish the quick check-in to unlock your TinyWins.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-white/62">
+          <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-white/60">
             We couldn&apos;t find a complete set of answers yet. Jump back into the
             assessment and we&apos;ll turn your responses into a clean impact snapshot here.
           </p>
