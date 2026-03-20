@@ -28,9 +28,9 @@ export function TinyWinsLogo({
       className={
         variant === "icon"
           ? `h-10 w-10 object-contain ${className}`
-          : `h-10 w-auto object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.28)] sm:h-11 lg:h-12 xl:h-14 ${className}`
+          : `h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.28)] sm:h-12 ${className}`
       }
-      sizes={variant === "full" ? "(max-width: 640px) 150px, (max-width: 1024px) 176px, 210px" : undefined}
+      sizes={variant === "full" ? "(max-width: 640px) 164px, 184px" : undefined}
     />
   );
 
