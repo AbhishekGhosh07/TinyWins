@@ -15,32 +15,23 @@ export function TinyWinsLogo({
   href = "/",
 }: TinyWinsLogoProps) {
   const src = variant === "icon" ? "/tinywins-icon.svg" : "/TinyWins-logo.png";
-  const width = variant === "icon" ? 40 : 240;
-  const height = variant === "icon" ? 40 : 64;
+  const width = variant === "icon" ? 40 : 612;
+  const height = variant === "icon" ? 40 : 408;
 
   const image = (
-    <div
+    <Image
+      src={src}
+      alt="TinyWins"
+      width={width}
+      height={height}
+      priority={priority}
       className={
         variant === "icon"
-          ? `inline-flex h-10 w-10 items-center justify-center overflow-hidden ${className}`
-          : `relative inline-flex h-10 w-[180px] items-center justify-center overflow-hidden sm:h-11 sm:w-[196px] ${className}`
+          ? `h-10 w-10 object-contain ${className}`
+          : `h-9 w-auto object-contain sm:h-10 ${className}`
       }
-    >
-      <Image
-        src={src}
-        alt="TinyWins"
-        fill={variant === "full"}
-        width={variant === "icon" ? width : undefined}
-        height={variant === "icon" ? height : undefined}
-        priority={priority}
-        className={
-          variant === "icon"
-            ? "h-auto w-auto object-contain"
-            : "scale-[1.9] object-cover object-center"
-        }
-        sizes={variant === "full" ? "(max-width: 640px) 180px, 196px" : undefined}
-      />
-    </div>
+      sizes={variant === "full" ? "(max-width: 640px) 128px, 144px" : undefined}
+    />
   );
 
   return href ? <Link href={href}>{image}</Link> : image;
