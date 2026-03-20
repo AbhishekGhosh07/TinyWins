@@ -28,11 +28,17 @@ export function TinyWinsLogo({
       className={
         variant === "icon"
           ? `h-10 w-10 object-contain ${className}`
-          : `h-9 w-auto object-contain sm:h-10 ${className}`
+          : `h-8 w-auto object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.28)] sm:h-9 lg:h-11 xl:h-12 ${className}`
       }
-      sizes={variant === "full" ? "(max-width: 640px) 128px, 144px" : undefined}
+      sizes={variant === "full" ? "(max-width: 640px) 132px, (max-width: 1024px) 152px, 168px" : undefined}
     />
   );
 
-  return href ? <Link href={href}>{image}</Link> : image;
+  return href ? (
+    <Link href={href} className="inline-flex shrink-0 items-center">
+      {image}
+    </Link>
+  ) : (
+    image
+  );
 }
