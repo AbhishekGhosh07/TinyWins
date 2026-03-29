@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 import { TinyWinsLogo } from "@/components/tinywins-logo";
 
 const links = [
-  { label: "How it Works", href: "#how-it-works" },
   { label: "Features", href: "#features" },
+  { label: "How It Works", href: "#how-it-works" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -29,13 +29,13 @@ export function Navbar() {
     <header className="sticky top-0 z-50 px-4 pb-4 pt-4 sm:px-6 lg:px-8">
       <div
         className={`mx-auto max-w-6xl rounded-[1.75rem] transition duration-300 ${
-          isScrolled ? "glass-panel border-white/10 shadow-panel" : "border border-transparent"
+          isScrolled ? "glass-panel border-white/10 shadow-panel" : "bg-black/10"
         }`}
       >
         <div className="flex min-h-[74px] items-center justify-between gap-5 px-4 py-3 sm:px-5">
           <TinyWinsLogo priority className="translate-y-[1px] sm:mr-1" />
 
-          <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex">
+          <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
             {links.map((link) => (
               <a key={link.href} href={link.href} className="transition hover:text-white">
                 {link.label}

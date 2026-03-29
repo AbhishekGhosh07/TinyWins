@@ -18,9 +18,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(56, 200, 162, 0.14), transparent 28%),
-    radial-gradient(circle at top right, rgba(47, 107, 255, 0.14), transparent 32%),
-    linear-gradient(180deg, #06101d 0%, #030711 100%);
+    radial-gradient(circle at top left, rgba(56, 200, 162, 0.12), transparent 24%),
+    radial-gradient(circle at top right, rgba(47, 107, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, #040a13 0%, #030711 48%, #02050c 100%);
   color: #f7faff;
   font-family: "Avenir Next", "Satoshi", "Inter", "Segoe UI", sans-serif;
 }
@@ -35,9 +35,9 @@ a {
 }
 
 .glass-panel {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 20px 60px rgba(3, 8, 20, 0.32);
+  box-shadow: 0 20px 60px rgba(3, 8, 20, 0.36);
   backdrop-filter: blur(20px);
 }
 
@@ -47,9 +47,9 @@ a {
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
-    radial-gradient(circle at top left, rgba(56, 200, 162, 0.08), transparent 20%),
-    radial-gradient(circle at top right, rgba(47, 107, 255, 0.08), transparent 22%),
-    linear-gradient(180deg, rgba(8, 16, 30, 0.98), rgba(4, 8, 18, 0.97));
+    radial-gradient(circle at 18% 0%, rgba(56, 200, 162, 0.08), transparent 18%),
+    radial-gradient(circle at 82% 8%, rgba(47, 107, 255, 0.10), transparent 24%),
+    linear-gradient(180deg, rgba(5, 11, 22, 0.985), rgba(3, 7, 16, 0.97));
 }
 
 .noise-overlay::before {
@@ -63,9 +63,24 @@ a {
     radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.04) 0, transparent 20%);
 }
 
+@keyframes hero-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade-in {
+  animation: hero-fade-in 900ms ease-out both;
+}
+
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-teal to-brand-blue px-5 py-3 text-sm font-medium text-white shadow-panel transition duration-300 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#07111F] sm:px-6 sm:py-3.5;
+    @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-teal to-brand-blue px-5 py-3 text-sm font-medium text-white shadow-[0_18px_55px_rgba(27,123,135,0.28)] transition duration-300 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#07111F] sm:px-6 sm:py-3.5;
   }
 
   .btn-secondary {
@@ -73,7 +88,7 @@ a {
   }
 
   .tw-card {
-    @apply rounded-[1.75rem] border border-white/10 bg-white/[0.03] shadow-panel backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/10 hover:bg-white/[0.05];
+    @apply rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.018))] shadow-panel backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.05];
   }
 
   .section-pad {

@@ -31,8 +31,8 @@ export function ProductPreviewSection() {
         <div>
           <SectionHeading
             eyebrow="Results Preview"
-            title="A fuller dashboard view of what happens after the assessment."
-            description="The results experience goes beyond a quick teaser. It organizes your impact areas, shows where to focus, and turns that into a short list of practical next steps."
+            title="A darker, more focused results view designed to guide the next step."
+            description="The results experience organizes your impact areas, shows where to focus, and turns that into a short list of practical next steps."
           />
           <div className="mt-7 space-y-3 text-sm text-white/60">
             <div className="tw-card flex items-start gap-4 p-4">
@@ -54,6 +54,7 @@ export function ProductPreviewSection() {
           <div className="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-brand-blue/10 blur-[110px]" />
           <div className="tw-card relative overflow-hidden rounded-[2rem] p-4 sm:p-5 lg:p-6">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+            <div className="absolute -right-10 top-10 h-36 w-36 rounded-full bg-brand-blue/10 blur-[100px]" />
             <div className="grid gap-4 xl:grid-cols-[0.95fr_1.05fr]">
               <div className="rounded-[1.5rem] border border-white/8 bg-black/20 p-4">
                 <p className="text-xs uppercase tracking-[0.24em] text-white/40">

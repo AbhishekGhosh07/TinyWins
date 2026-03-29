@@ -1,132 +1,53 @@
 import Link from "next/link";
 
-const trustPoints = [
-  "Behavioral-science inspired",
-  "Personalized impact scoring",
-  "Actionable next steps",
-];
+import { ProductFactsStrip } from "@/components/product-facts-strip";
 
 export function Hero() {
   return (
-    <section className="px-4 pb-10 pt-2 sm:px-6 sm:pb-12 lg:px-8 lg:pb-14">
-      <div className="relative mx-auto grid max-w-6xl items-center gap-10 overflow-hidden rounded-[2.25rem] border border-white/10 bg-[#07111F] px-6 py-10 shadow-panel sm:px-8 sm:py-12 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12 lg:px-12 lg:py-16">
-        <div className="absolute inset-0 bg-hero-grid bg-[size:100%_100%,30px_30px,30px_30px] opacity-[0.16]" />
-        <div className="absolute left-[-8%] top-[-10%] h-56 w-56 rounded-full bg-brand-teal/10 blur-[110px]" />
-        <div className="absolute bottom-[-14%] right-[-8%] h-72 w-72 rounded-full bg-brand-blue/10 blur-[120px]" />
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent" />
+    <section
+      className="relative isolate flex min-h-[92vh] items-center overflow-hidden pb-[23rem] sm:min-h-[94vh] sm:pb-72 lg:min-h-[900px] lg:pb-44"
+      style={{
+        backgroundImage: "url('/tinywins-hero.webp.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "right center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,7,18,0.85)_0%,rgba(3,7,18,0.65)_35%,rgba(3,7,18,0.30)_55%,transparent_75%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_58%_48%,transparent_42%,rgba(2,6,14,0.10)_72%,rgba(2,6,14,0.40)_100%)]" />
+      <div className="absolute inset-0 opacity-[0.12] [background-image:radial-gradient(circle_at_18%_16%,rgba(255,255,255,0.6)_0,transparent_0.7%),radial-gradient(circle_at_72%_24%,rgba(255,255,255,0.38)_0,transparent_0.6%),radial-gradient(circle_at_28%_74%,rgba(255,255,255,0.4)_0,transparent_0.65%)] [background-size:220px_220px,280px_280px,260px_260px]" />
+      <div className="absolute inset-y-0 right-0 w-[28%] bg-gradient-to-l from-[#030711] via-[rgba(3,7,17,0.38)] to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent via-[rgba(3,7,17,0.46)] to-[#030711]" />
+      <div className="absolute bottom-[-6%] right-[-4%] h-[46%] w-[34%] rounded-full bg-[radial-gradient(circle,rgba(3,7,17,0.68),rgba(3,7,17,0.16)_52%,transparent_80%)] blur-[42px]" />
 
-        <div className="relative max-w-2xl">
-          <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70 shadow-soft">
-            <span className="h-2 w-2 rounded-full bg-brand-teal" />
+      <div className="relative mx-auto flex w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+        <div className="hero-fade-in max-w-[520px] py-20 sm:py-24 lg:py-36">
+          <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm text-white/70 backdrop-blur-xl">
+            <span className="h-2 w-2 rounded-full bg-brand-teal shadow-[0_0_14px_rgba(56,200,162,0.85)]" />
             Small changes. Real impact.
           </div>
 
-          <h1 className="mt-7 max-w-4xl text-balance text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-[4.5rem] lg:leading-[1.02]">
-            Discover the lifestyle changes that create your biggest impact.
+          <h1 className="mt-7 text-balance text-4xl font-semibold tracking-[-0.055em] text-white sm:text-5xl lg:text-[4.9rem] lg:leading-[0.96]">
+            Track the lifestyle changes that shape your impact.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-balance text-base leading-7 text-white/65 sm:text-lg sm:leading-8">
-            TinyWins analyzes your habits and shows the highest-impact improvements
-            you can make in under 2 minutes.
+          <p className="mt-6 max-w-[520px] text-balance text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
+            TinyWins helps you measure your habits, discover your highest-impact
+            opportunities, and build more sustainable routines in under 2 minutes.
           </p>
 
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <Link href="/assessment" className="btn-primary">
               Start Assessment
             </Link>
-            <a href="#how-it-works" className="btn-secondary gap-2">
+            <a href="#how-it-works" className="btn-secondary">
               See How It Works
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 20 20"
-                className="h-4 w-4 text-white/55"
-              >
-                <path
-                  d="M10 4v10m0 0 4-4m-4 4-4-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.8"
-                />
-              </svg>
             </a>
-          </div>
-
-          <div className="mt-6 flex flex-col gap-3 text-sm text-white/55 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
-            {trustPoints.map((point) => (
-              <div key={point} className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-green" />
-                <span>{point}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="tw-card relative overflow-hidden rounded-[2rem] p-4 sm:p-5 lg:p-6">
-            <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-brand-teal/10 blur-[80px]" />
-            <div className="absolute left-6 top-6 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-white/60">
-              Assessment preview
-            </div>
-
-            <div className="mt-12 grid gap-3 sm:gap-4">
-              <div className="rounded-[1.6rem] border border-white/8 bg-black/20 p-4 sm:p-5">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-white/40">Impact Snapshot</p>
-                    <p className="mt-2 text-2xl font-semibold text-white">Your first read, instantly</p>
-                  </div>
-                  <div className="rounded-full border border-brand-teal/20 bg-brand-teal/10 px-3 py-1 text-sm text-brand-teal">
-                    2 min
-                  </div>
-                </div>
-
-                <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                  {[
-                    { name: "Transport", value: "High", tone: "bg-rose-400/10 text-rose-100" },
-                    { name: "Food", value: "Medium", tone: "bg-amber-300/10 text-amber-50" },
-                    { name: "Home", value: "Medium", tone: "bg-amber-300/10 text-amber-50" },
-                  ].map((metric) => (
-                    <div
-                      key={metric.name}
-                      className="rounded-[1.2rem] border border-white/8 bg-white/[0.03] p-4"
-                    >
-                      <p className="text-sm text-white/50">{metric.name}</p>
-                      <span className={`mt-3 inline-flex rounded-full px-3 py-1 text-sm ${metric.tone}`}>
-                        {metric.value}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="rounded-[1.6rem] border border-white/8 bg-black/20 p-4 sm:p-5">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/40">
-                  Top TinyWins
-                </p>
-                <div className="mt-4 space-y-3">
-                  {[
-                    "Replace one short car trip this week",
-                    "Swap 1-2 beef meals for lower-impact options",
-                    "Batch online orders into fewer deliveries",
-                  ].map((item, index) => (
-                    <div
-                      key={item}
-                      className="flex items-start gap-3 rounded-[1.2rem] border border-white/8 bg-white/[0.03] p-4"
-                    >
-                      <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-teal to-brand-blue text-xs font-medium text-white">
-                        0{index + 1}
-                      </div>
-                      <p className="text-sm leading-6 text-white/70">{item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
+      <ProductFactsStrip className="absolute inset-x-0 bottom-8 z-10 pb-0 sm:bottom-10 lg:bottom-12" />
     </section>
   );
 }
